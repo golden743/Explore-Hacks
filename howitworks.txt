@@ -1,0 +1,27 @@
+How the simulation works(first past the post)
+
+First, we create a list of people that are going to vote. You pass in the number of voters, and it loops that number of times, and each loop it adds one random number between 1 and 15 to the list of people. This is creating the "people". The people are represented by their number, which is their "political stance"
+
+Next, we set the votes for each candidate to 0, and we set "myVote" to 0(which represents each individual person's vote)
+
+Then, we go through each item in the list of people, which is like going through the people
+
+We then go through the list of candidates. The candidates are also assigned a random number between 1 and 15(but this is not done in the function)
+
+For each candidate, we calculate the difference between the voter's number and the candidate's number
+
+Higher difference means the candidate is farther away from the voter in terms of political stance
+
+This means that if the difference between the candidate and the voter is 0, then they are exactly the same in terms of political view
+
+Once all of the differences between the voter and the candidates have been calculated, the least difference is calculated out of all the candidates. The candidate with the least difference between their number and the voter's number is then given the voter's vote. this is basically simulating the idea that a voter will vote for the candidate that is most similar to their political views
+
+After the voting is done, we have to calculate which candidate won
+
+We do this by going through the list of the candidate's votes, and calculating the maximum
+
+Once the maximum is determined, we can say that the candidate with the maximum number of votes is the winner of the election!
+
+Finally, we use two other functions to calculate the average difference between the voters and the candidate that won, which represent how politically close they are, and the percentage of the population that is very far from the leader, which means they will be very unhappy with the result. These are both very important measures that determine how good or bad a voting system is.
+
+This is just an example of the most basic voting system, the others are much more complicated!(but also much more successful)
